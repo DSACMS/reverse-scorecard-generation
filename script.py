@@ -1,5 +1,6 @@
 import csv
 import os
+import os.path
 import sys
 from openpyxl import load_workbook
 
@@ -19,6 +20,13 @@ ALL_ROWS = (
     DATA_ROWS,
     CROSS_ROWS,
 )
+
+# check if out.csv exists
+if not os.path.isfile("out.csv"):
+    # if not, duplicate out_template.csv to out.csv
+    with open("out_template.csv", "r") as template_file:
+        with open("out.csv", "w") as csv_file:
+            csv_file.write(template_file.read())
 
 # append to an existing output CSV file, or create a new one if it doesn't exist
 # NOTE: no CSV headers are written
@@ -42,17 +50,27 @@ with open("out.csv", "a") as csv_file:
             # get QUESTIONNAIRE sheet
             ws = wb["QUESTIONNAIRE"]
 
-            # get HHS system name
+            # get HHS system name & ISSO name
             system_name = ws["B3"].value
             if not system_name:
                 raise ValueError("System name cell B3 is empty")
+            isso_name = ws["B4"].value
+            if not isso_name:
+                raise ValueError("ISSO name cell B4 is empty")
+
+            # set first few columns
+            # Acronym	Component	SubmittedBy	dataCenterEnvironment	UserTypes
+            new_csv_row = [system_name, "", isso_name, "", ""]
 
             # get the data from the sheet and sequentially add it to a list
-            new_csv_row = [system_name]
             for row in ALL_ROWS:
                 for i in range(row[0], row[1] + 1, 4):
-                    # add current capability score
-                    new_csv_row.append(ws[f"E{i}"].value)
+                    # get current capability score
+                    score = ws[f"E{i}"].value
+
+                    # get current capability description
+                    # i + score - 1 returns the row number of the capability description
+                    new_csv_row.append(ws[f"D{i + score - 1}"].value)
 
                     # add current capability explanation, and remove newlines
                     new_csv_row.append(

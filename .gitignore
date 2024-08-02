@@ -164,5 +164,6 @@ cython_debug/
 #.idea/
 
 # REVERSE SCORECARD GENERATION
+.DS_Store
 *.xlsx
 out.csv
