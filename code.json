@@ -1,10 +1,53 @@
 {
-    "project_type": "Tools",
-    "user_input": "Yes",
-    "project_fisma_level": "Moderate",
-    "group": "CMS/OA/DSAC",
-    "subset_in_healthcare": "Operational",
-    "user_type": "Government",
-    "repository_host": "Github.com",
-    "maturity_model_tier": "1"
+  "name": "reverse-scorecard-generation",
+  "description": "Combine column-major HHS Zero Trust Scorecard Excel spreadsheets into a row-major CSV file.",
+  "longDescription": "",
+  "status": "",
+  "permissions": {
+    "license": [
+      {
+        "name": "",
+        "URL": ""
+      }
+    ],
+    "usageType": "",
+    "exemptionText": ""
+  },
+  "organization": "",
+  "repositoryURL": "https://github.com/DSACMS/reverse-scorecard-generation",
+  "vcs": "git",
+  "laborHours": 2800,
+  "platforms": [],
+  "categories": [],
+  "softwareType": "",
+  "languages": [
+    "Python"
+  ],
+  "maintenance": "",
+  "date": {
+    "created": "2024-08-01T03:10:28Z",
+    "lastModified": "2025-02-13T20:37:33Z",
+    "metaDataLastUpdated": "2025-02-13T20:38:24.219Z"
+  },
+  "tags": [],
+  "contact": {
+    "email": "",
+    "name": ""
+  },
+  "localisation": false,
+  "repositoryType": "",
+  "userInput": false,
+  "fismaLevel": "",
+  "group": "CMS/OA/DSAC",
+  "subsetInHealthcare": [],
+  "userType": [],
+  "repositoryHost": "github",
+  "maturityModelTier": 0,
+  "project_type": "Tools",
+  "user_input": "Yes",
+  "project_fisma_level": "Moderate",
+  "subset_in_healthcare": "Operational",
+  "user_type": "Government",
+  "repository_host": "Github.com",
+  "maturity_model_tier": "1"
 }
