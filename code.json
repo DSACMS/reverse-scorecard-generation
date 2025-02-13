@@ -13,7 +13,7 @@
     "usageType": "openSource",
     "exemptionText": ""
   },
-  "organization": "Organization responsible for the project	Centers for Medicare & Medicaid Services",
+  "organization": "Centers for Medicare & Medicaid Services",
   "repositoryURL": "https://github.com/DSACMS/reverse-scorecard-generation",
   "vcs": "git",
   "laborHours": 2800,
