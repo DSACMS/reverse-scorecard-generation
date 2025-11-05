@@ -1,6 +1,7 @@
 {
   "name": "reverse-scorecard-generation",
-  "description": "Combine Excel spreadsheets into CSV file.",
+  "version": "",
+  "description": "Combine column-major HHS Zero Trust Scorecard Excel spreadsheets into a row-major CSV file.",
   "longDescription": "Combine column-major HHS Zero Trust Scorecard Excel spreadsheets into a row-major CSV file.",
   "status": "Production",
   "permissions": {
@@ -15,32 +16,63 @@
   },
   "organization": "Centers for Medicare & Medicaid Services",
   "repositoryURL": "https://github.com/DSACMS/reverse-scorecard-generation",
+  "repositoryHost": "github.com/DSACMS",
+  "repositoryVisibility": "public",
+  "homepageURL": "",
+  "downloadURL": "",
+  "disclaimerURL": "",
+  "disclaimerText": "",
   "vcs": "git",
-  "laborHours": 2800,
-  "platforms": ["mac"],
-  "categories": ["data-collection", "data-analytics"],
+  "laborHours": 2830,
+  "reuseFrequency": {
+    "forks": 0,
+    "clones": 0
+  },
+  "platforms": [
+    "mac"
+  ],
+  "categories": [
+    "data-collection",
+    "data-analytics"
+  ],
   "softwareType": "standalone/desktop",
   "languages": [
     "Python"
   ],
   "maintenance": "internal",
+  "contractNumber": [],
+  "SBOM": "https://github.com/DSACMS/reverse-scorecard-generation/network/dependencies",
+  "relatedCode": [],
+  "reusedCode": [],
+  "partners": [],
   "date": {
     "created": "2024-08-01T03:10:28Z",
-    "lastModified": "2025-02-13T20:37:33Z",
-    "metaDataLastUpdated": "2025-02-13T20:38:24.219Z"
+    "lastModified": "2025-11-05T22:38:30Z",
+    "metadataLastUpdated": "2025-11-05T22:40:17.748Z"
   },
-  "tags": ["CSV", "Excel", "Zero Trust", "cybersecurity"],
+  "tags": [
+    "csv",
+    "excel",
+    "python"
+  ],
   "contact": {
     "email": "opensource@cms.hhs.gov",
     "name": "CMS Open Source Team"
   },
+  "feedbackMechanism": "https://github.com/DSACMS/reverse-scorecard-generation/issues",
+  "AIUseCaseID": "0",
   "localisation": false,
   "repositoryType": "tools",
   "userInput": false,
   "fismaLevel": "Low",
   "group": "CMS/OA/DSAC",
-  "subsetInHealthcare": ["Operational"],
-  "userType": ["Government"],
-  "repositoryHost": "github.com/DSACMS",
+  "projects": [],
+  "systems": [],
+  "subsetInHealthcare": [
+    "Operational"
+  ],
+  "userType": [
+    "Government"
+  ],
   "maturityModelTier": 1
 }
